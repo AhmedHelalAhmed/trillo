@@ -12,7 +12,7 @@
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: 1px solid var(--color-grey-light-2);
+  border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,5 +36,32 @@
   flex: 1; // the element should grow as much as it can
   //background-color: orangered; // for testing
 
-  height: 80rem;// for test
+  //height: 80rem; // for test
+}
+
+.detail {
+  font-size: 1.4rem;
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
+}
+
+.description {
+  //background-color: orangered; //for test
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  flex: 0 0 60%; // when we use percentage we put the other values as zeros
+  margin-right: 4.5rem;
+}
+
+.user-reviews {
+  //background-color: yellowgreen; //for test
+  flex: 1; // to take the remaining space
+
+  //text-align: center;
+  display: flex; // to center the text shall all :)
+  flex-direction: column;
+  align-items: center; //default is stretch
 }
